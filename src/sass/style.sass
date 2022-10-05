@@ -1,3 +1,8 @@
+$blueLight = #1EACC7
+$red = ##FF5656
+$black = #000
+$white = #fff
+  
 *
   font-family: 'PT Sans', sans-serif
   font-family: 'Roboto', sans-serif
@@ -31,7 +36,7 @@ nav
     text-align: center
     white-space: nowrap
     text-decoration: none
-    color: #ffffff
+    color: $white
 
 .subheader
   position: absolute
@@ -49,7 +54,7 @@ nav
     /* margin-top: 3px;
     font-weight: 100
     font-size: 13px
-    color: #ffffff
+    color: $white
     opacity: 0.5
 
   .subheader_call
@@ -58,14 +63,14 @@ nav
     font-size: 12px
     line-height: 14px
     text-align: right
-    color: #ffffff
+    color: $white
 
   .subheader_phone
     display: block
     margin-top: 12px
     font-size: 22px
     text-transform: uppercase
-    color: #ffffff
+    color: $white
     line-height: 12px
     white-space: nowrap
     text-align: right
@@ -74,13 +79,13 @@ nav
   .subheader_btn
     width: 172px
     height: 46px
-    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+    background: linear-gradient(0deg, $blueLight 0%, #4ce2ff 100%)
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
     font-size: 14px
     text-align: center
     text-transform: uppercase
-    color: #ffffff
+    color: $white
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     border: none
     border-radius: 4px
@@ -96,7 +101,7 @@ nav
     line-height: 60px
     text-align: center
     text-transform: uppercase
-    color: #ffffff
+    color: $white
     margin: 0
 
   .promo_subheader
@@ -105,7 +110,7 @@ nav
     line-height: 36px
     text-align: center
     text-transform: uppercase
-    color: #ffffff
+    color: $white
     margin: 0
     margin-top: 22px
 
@@ -113,7 +118,7 @@ nav
     font-size: 18px
     line-height: 24px
     text-align: center
-    color: #ffffff
+    color: $white
     margin: 0
     margin-top: 25px
 
@@ -123,7 +128,7 @@ nav
     margin-top: 115px
     width: 259px
     height: 63px
-    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+    background: linear-gradient(0deg, $blueLight 0%, #4ce2ff 100%)
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
     border: none
     border-radius: 4px
@@ -131,7 +136,7 @@ nav
     font-size: 18px
     text-align: center
     text-transform: uppercase
-    color: #ffffff
+    color: $white
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
 .reason
@@ -154,7 +159,7 @@ nav
       h3
         font-weight: 400
         font-size: 17px
-        color: #1eacc7
+        color: $blueLight
 
     .reason_img_wrapper
       display: flex
@@ -164,7 +169,7 @@ nav
       width: 116px
       height: 116px
       border-radius: 100%
-      background-color: #1eacc7
+      background-color: $blueLight
 
 .label
   display: flex
@@ -173,11 +178,11 @@ nav
   margin: 20px auto 0 auto
   width: 115px
   height: 27px
-  background: #000000
+  background: $black
   font-size: 11px
   line-height: 11px
   text-transform: uppercase
-  color: #ffffff
+  color: $white
 
 .title
   margin-top: 33px
@@ -224,7 +229,7 @@ nav
         line-height: 31px
         text-align: center
         text-transform: uppercase
-        color: #FFFFFF
+        color: $white
     &_plus
       display: flex
       justify-content: center
@@ -241,4 +246,22 @@ nav
       border-radius: 100%
       cursor: pointer
 
-        
+.choice
+  background: url('../img/Choise_bg_group.png') center center/cover no-repeat
+  min-height: 900px
+  padding: 34px 0 34px 0
+  .label
+    background: white
+    color: black
+  .title
+    color: white
+  .subtitle
+    color: white
+  &_auto
+    display: block
+    margin: 54px auto 0 auto
+  &_descr
+      font-size: 17px
+      line-height: 24px
+      text-align: center
+      color: #222222

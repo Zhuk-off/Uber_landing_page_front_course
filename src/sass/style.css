@@ -291,4 +291,30 @@ nav {
   background: black;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.choice {
+  background: url("../img/Choise_bg_group.png") center center/cover no-repeat;
+  min-height: 900px;
+  padding: 34px 0 34px 0;
+}
+.choice .label {
+  background: white;
+  color: black;
+}
+.choice .title {
+  color: white;
+}
+.choice .subtitle {
+  color: white;
+}
+.choice_auto {
+  display: block;
+  margin: 54px auto 0 auto;
+}
+.choice_descr {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
 }/*# sourceMappingURL=style.css.map */
