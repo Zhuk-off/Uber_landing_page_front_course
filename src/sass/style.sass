@@ -1,7 +1,12 @@
-$blueLight = #1EACC7
-$red = ##FF5656
-$black = #000
-$white = #fff
+$main_color: #1EACC7
+$second_color: #FF5656
+$black: #000
+$white: #fff
+
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $main_color
   
 *
   font-family: 'PT Sans', sans-serif
@@ -79,7 +84,7 @@ nav
   .subheader_btn
     width: 172px
     height: 46px
-    background: linear-gradient(0deg, $blueLight 0%, #4ce2ff 100%)
+    background: linear-gradient(0deg, $main_color 0%, #4ce2ff 100%)
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
     font-size: 14px
@@ -89,6 +94,7 @@ nav
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     border: none
     border-radius: 4px
+    +btn_hover
 
 .promo
   background: url('/src/img/uber_bg.png') center (center / cover) no-repeat
@@ -128,7 +134,7 @@ nav
     margin-top: 115px
     width: 259px
     height: 63px
-    background: linear-gradient(0deg, $blueLight 0%, #4ce2ff 100%)
+    background: linear-gradient(0deg, $main_color 0%, #4ce2ff 100%)
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
     border: none
     border-radius: 4px
@@ -138,6 +144,7 @@ nav
     text-transform: uppercase
     color: $white
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
 
 .reason
   margin-bottom: 64px
@@ -159,7 +166,7 @@ nav
       h3
         font-weight: 400
         font-size: 17px
-        color: $blueLight
+        color: $main_color
 
     .reason_img_wrapper
       display: flex
@@ -169,7 +176,7 @@ nav
       width: 116px
       height: 116px
       border-radius: 100%
-      background-color: $blueLight
+      background-color: $main_color
 
 .label
   display: flex
@@ -245,6 +252,31 @@ nav
       background: black
       border-radius: 100%
       cursor: pointer
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 14px
+        height: 2px
+        background-color: $main_color
+        transition: 0.2s all
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 2px
+        height: 14px
+        background-color: $main_color
+        transition: 0.2s all
+      &:hover
+        &::before, &::after
+          background-color: $second_color
+          
+        
 
 .choice
   background: url('../img/Choise_bg_group.png') center center/cover no-repeat
@@ -265,3 +297,47 @@ nav
       line-height: 24px
       text-align: center
       color: #222222
+  
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 20px
+    li
+      position: relative
+      font-size: 14px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 5px
+      &::before
+        content: ''
+        position: absolute
+        left: -32px
+        top: 2px
+        transform: translateX(-5px, -1px)
+        width: 21px
+        height: 20px
+        background: url('../icons/done_blue.svg') center center/cover no-repeat
+  &_descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3
+  .warning
+    .require_title
+      color: $second_color
+    .require_list
+      li
+        &::before
+          background: url('../icons/done_red.svg') center center/cover no-repeat
+          
