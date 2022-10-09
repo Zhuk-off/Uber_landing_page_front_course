@@ -1,0 +1,130 @@
+@media ( max-width: 1200px )
+    .menu
+        &_item
+            padding: 0 16px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+            margin-top: 35px
+    .reason
+        &_descr
+            width: 315px
+
+@media ( max-width: 991px )
+    .menu
+        &_item
+            padding: 0 4px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 12px 
+        &_phone
+            font-size: 18px 
+        &_btn
+            width: 100%
+            height: 40px
+            margin-top: 5px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 25px
+        &_descr
+            font-size: 13px
+            line-height: 22px
+
+    .reason
+        &_item
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            gap: 13px
+        &_descr
+            margin: 0
+
+    .mobile
+        &_item
+            width: 230px
+    
+    .choice
+        &_auto
+            width: 100%
+    
+    
+    .footer
+        &_menu
+            min-width: 400px
+        &_app
+            &_list
+                flex-direction: column
+
+@media ( max-width: 575px )
+    .menu
+        position: fixed
+        display: flex
+        flex-direction: column
+        justify-content: center
+        // align-items: center
+        gap: 25px
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 0.5s all
+        &_active
+            left: 0
+        &_item
+            flex-grow: 0
+            padding: 0 
+            border: none
+        &_link
+             font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        // height: 21px
+        cursor: pointer
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-top: 5px
+            transition: 0.5s all
+        &_active
+            span
+                margin: -2px
+                &:first-child
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: translateY(3px) rotate(45deg)
+                    
+                    
+                    
+
+
+    .footer
+        &_wrapper
+            flex-direction: column
+            gap: 20px
+            padding: 15px 0
+        &_menu
+            min-width: 300px
+        &_app
+            &_list
+                flex-direction: row
