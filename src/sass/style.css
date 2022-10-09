@@ -907,6 +907,14 @@ nav {
   .menu {
     width: 85%;
   }
+  .menu_item {
+    width: 100%;
+    padding: 4px 0;
+  }
+  .menu_link {
+    display: block;
+    height: 25px;
+  }
   .divider {
     width: 65vw;
     height: 3px;
