@@ -113,7 +113,7 @@ nav {
 }
 
 .promo {
-  background: url("/src/img/uber_bg.png") center center/cover no-repeat;
+  background: url("../img/uber_bg.png") center center/cover no-repeat;
   min-height: 800px;
   padding: 150px 0 135px 0;
 }
